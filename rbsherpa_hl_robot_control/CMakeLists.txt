@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(rbsherpa_xl_robot_control)
+project(rbsherpa_hl_robot_control)
 
 find_package(catkin REQUIRED COMPONENTS
     nav_msgs
@@ -36,18 +36,18 @@ include_directories(
 )
 
 
-#add_executable(rbsherpa_xl_robot_control src/rbsherpa_xl_robot_control.cpp)
-#add_executable(rbsherpa_xl_robot_control_vrep src/rbsherpa_xl_robot_control_vrep.cpp)
+#add_executable(rbsherpa_hl_robot_control src/rbsherpa_hl_robot_control.cpp)
+#add_executable(rbsherpa_hl_robot_control_vrep src/rbsherpa_hl_robot_control_vrep.cpp)
 
-#add_dependencies(rbsherpa_xl_robot_control robotnik_msgs_generate_messages_cpp)
-#add_dependencies(rbsherpa_xl_robot_control_vrep robotnik_msgs_generate_messages_cpp)
+#add_dependencies(rbsherpa_hl_robot_control robotnik_msgs_generate_messages_cpp)
+#add_dependencies(rbsherpa_hl_robot_control_vrep robotnik_msgs_generate_messages_cpp)
 
 
-#target_link_libraries(rbsherpa_xl_robot_control
+#target_link_libraries(rbsherpa_hl_robot_control
 #   ${catkin_LIBRARIES}
 # )
 
-#target_link_libraries(rbsherpa_xl_robot_control_vrep
+#target_link_libraries(rbsherpa_hl_robot_control_vrep
 #   ${catkin_LIBRARIES}
 # )
 
@@ -57,7 +57,7 @@ include_directories(
 #############
 
 #install(
-#  TARGETS rbsherpa_xl_robot_control
+#  TARGETS rbsherpa_hl_robot_control
 #  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 #)
 

@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <package>
-  <name>rbsherpa_xl_robot_control</name>
+  <name>rbsherpa_hl_robot_control</name>
   <version>0.0.0</version>
-  <description>The rbsherpa_xl_robot_control package</description>
+  <description>The rbsherpa_hl_robot_control package</description>
 
   <maintainer email="alvaro@todo.todo">alvaro</maintainer>
+  <maintainer email="asoriano@robotnik.es">asoriano</maintainer>
 
   <license>TODO</license>
 
