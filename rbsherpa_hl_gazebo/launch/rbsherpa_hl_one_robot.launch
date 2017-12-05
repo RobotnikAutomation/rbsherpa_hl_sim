@@ -28,12 +28,16 @@
 		 args="-x $(arg x_init_pose) -y $(arg y_init_pose) -z $(arg z_init_pose) -urdf -param robot_description -model $(arg id_robot)" />
 
 		<!-- Load joint controller configurations from YAML file to parameter server -->
-		<rosparam file="$(find rbsherpa_hl_gazebo)/config/$(arg prefix)control.yaml" command="load"/>
-		<param if="$(arg launch_robot_localization)" name="rbsherpa_hl_control/enable_odom_tf" value="false"/>
+		<!--rosparam file="$(find rbsherpa_hl_gazebo)/config/$(arg prefix)control.yaml" command="load"/-->
+		<!--param if="$(arg launch_robot_localization)" name="rbsherpa_hl_control/enable_odom_tf" value="false"/-->
 
-		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-			<remap from="/joint_states" to="joint_states" />
-		</node>
+		<!--node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"-->
+			<!--remap from="/joint_states" to="joint_states" /-->
+		<!--/node-->
+
+		<include file="$(find rbsherpa_hl_control)/launch/rbsherpa_hl_control.launch" >
+			<arg name="prefix" value="$(arg prefix)"/>
+		</include>
 
 		<!-- load the controllers -->
 		<node unless="$(arg ros_planar_move_plugin)" name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
