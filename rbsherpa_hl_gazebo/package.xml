@@ -17,7 +17,6 @@
   <build_depend>tf</build_depend>
   <build_depend>gazebo_ros</build_depend>
   <build_depend>rbsherpa_hl_control</build_depend>
-  <build_depend>rbsherpa_hl_robot_control</build_depend>
   <build_depend>rbsherpa_hl_description</build_depend>
   <build_depend>xacro</build_depend>
 
@@ -27,7 +26,6 @@
   <run_depend>tf</run_depend>
   <run_depend>gazebo_ros</run_depend>
   <run_depend>rbsherpa_hl_control</run_depend>
-  <run_depend>rbsherpa_hl_robot_control</run_depend>
   <run_depend>rbsherpa_hl_description</run_depend>
   <run_depend>xacro</run_depend>
   <run_depend>hector_gazebo_plugins</run_depend>
