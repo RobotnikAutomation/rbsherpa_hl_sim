@@ -26,6 +26,7 @@
 	<arg name="amcl_and_mapserver_a" default="false"/>
 	<arg name="map_file_a" default="empty/empty.yaml"/>
 	<arg name="xacro_robot_a" default="rbsherpa_hl_std.urdf.xacro"/>
+	<arg name="hq_model_a" default="false"/>
 
 	<!-- robot b -->
 	<arg name="id_robot_b" default="rbsherpa_hl_b"/>
@@ -38,6 +39,7 @@
 	<arg name="amcl_and_mapserver_b" default="false"/>
 	<arg name="map_file_b" default="empty/empty.yaml"/>
 	<arg name="xacro_robot_b" default="rbsherpa_hl_std.urdf.xacro"/>
+	<arg name="hq_model_b" default="false"/>
 
 	<!-- robot c -->
 	<arg name="id_robot_c" default="rbsherpa_hl_c"/>
@@ -50,6 +52,7 @@
 	<arg name="amcl_and_mapserver_c" default="false"/>
 	<arg name="map_file_c" default="empty/empty.yaml"/>
 	<arg name="xacro_robot_c" default="rbsherpa_hl_std.urdf.xacro"/>
+	<arg name="hq_model_c" default="false"/>
 
 
 	<!--BEGIN ROBOT 1-->
@@ -65,6 +68,7 @@
 		<arg name="map_file" value="$(arg map_file_a)"/>
  		<arg name="launch_move_base" value="$(arg move_base_robot_a)"/>
 		<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
+		<arg name="hq_model" value="$(arg hq_model_a)"/>
 	</include>
 
 	<!--BEGIN ROBOT 2-->
@@ -80,6 +84,7 @@
 		<arg name="map_file" value="$(arg map_file_b)"/>
  		<arg name="launch_move_base" value="$(arg move_base_robot_b)"/>
 		<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
+		<arg name="hq_model" value="$(arg hq_model_b)"/>
 	</include>
 
 	<!--BEGIN ROBOT 3-->
@@ -95,6 +100,7 @@
 		<arg name="map_file" value="$(arg map_file_c)"/>
  		<arg name="launch_move_base" value="$(arg move_base_robot_c)"/>
 		<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
+		<arg name="hq_model" value="$(arg hq_model_c)"/>
 	</include>
 
 
