@@ -24,7 +24,6 @@
 
 		<!-- Load the URDF into the ROS Parameter Server -->
 		<param name="robot_description" 
-		<param name="robot_description"
 		command="$(find xacro)/xacro '$(find rbsherpa_hl_description)/robots/$(arg xacro_robot)' prefix:=$(arg prefix) hq:=$(arg hq) ros_planar_move_plugin:=$(arg ros_planar_move_plugin) --inorder"/>
 
 		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
