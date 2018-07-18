@@ -16,8 +16,7 @@ Launch files that execute the complete simulation of the robot
 
 1) Install the following dependencies:
   - [rbsherpa_hl_common](https://github.com/RobotnikAutomation/rbsherpa_hl_common)
-  -  [omni_drive_controller](https://github.com/RobotnikAutomation/omni_drive_controller/tree/kinetic-devel-rbsherpa)
-  -  [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors/tree/kinetic-multi-devel)
+  - [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors)
 
 2) Launch RBSherpa HL simulation with: <br>
   - roslaunch rbsherpa_hl_sim_bringup rbsherpa_hl_complete.launch
