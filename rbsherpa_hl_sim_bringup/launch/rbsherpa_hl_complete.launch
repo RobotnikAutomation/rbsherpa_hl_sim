@@ -10,9 +10,12 @@
 	<arg name="gmapping_robot_a" default="false"/>
 	<arg name="move_base_robot_a" default="false"/>
 	<arg name="amcl_and_mapserver_a" default="false"/>
-	<arg name="xacro_robot_a" default="rbsherpa_hl_std.urdf.xacro"/>
+	<!-- rbsherpa_hl_omni_std.urdf.xacro or rbsherpa_hl_ackermann_std.urdf.xacro -->
+	<arg name="xacro_robot_a" default="rbsherpa_hl_omni_std.urdf.xacro"/>
 	<arg name="hq_model_a" default="false"/>
 	<arg name="ros_planar_move_plugin" default="true"/>
+	<!-- if sim is true then ros_planar_move_plugin must be true -->
+	<arg name="sim_a" default="true"/>
 
 
 	<!--LAUNCH GAZEBO SIMULATION-->
@@ -27,6 +30,7 @@
 		<arg name="xacro_robot_a" value="$(arg xacro_robot_a)"/>
 		<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
 		<arg name="hq_model_a" value="$(arg hq_model_a)"/>
+		<arg name="sim_a" value="$(arg sim_a)"/>
 	</include>
 
 
