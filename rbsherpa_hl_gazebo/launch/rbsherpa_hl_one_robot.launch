@@ -2,6 +2,7 @@
 <launch>
 
 	<arg name="id_robot" default="rbsherpa_hl"/>
+	<arg name="model" value="$(env ROBOT_MODEL)" />
 	<arg name="x_init_pose" default="0"/>
 	<arg name="y_init_pose" default="0"/>
 	<arg name="z_init_pose" default="0"/>
@@ -33,9 +34,7 @@
 		<node name="urdf_spawner_rbsherpa_hl_model" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
 		 args="-x $(arg x_init_pose) -y $(arg y_init_pose) -z $(arg z_init_pose) -urdf -param robot_description -model $(arg id_robot)" />
 
-		<include file="$(find rbsherpa_hl_control)/launch/rbsherpa_hl_control.launch" >
-			<arg name="prefix" value="$(arg prefix)"/>
-			<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
+		<include file="$(find rbsherpa_hl_control)/launch/rbsherpa_hl_control_$(arg model)_sim.launch" >
 			<arg name="sim" value="$(arg sim)"/>
 		</include>
 
