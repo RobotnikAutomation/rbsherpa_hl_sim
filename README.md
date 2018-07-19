@@ -19,6 +19,8 @@ Launch files that execute the complete simulation of the robot
   - [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors)
 
 2) Launch RBSherpa HL simulation with: <br>
+  Set your robot model omni/ackermann
+  - export ROBOT_MODEL=omni
   - roslaunch rbsherpa_hl_sim_bringup rbsherpa_hl_complete.launch
 
 3) Enjoy! You can use the topic "/rbsherpa_hl_a/rbsherpa_hl_control/cmd_vel" to control the RBSherpa HL robot.
