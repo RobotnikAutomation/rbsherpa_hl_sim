@@ -18,6 +18,7 @@
 	<arg name="sim" default="false"/>
 
 	<!-- BEGIN ROBOT-->
+	<rosparam file="$(find rbsherpa_hl_control)/config/gazebo/gazebo_controller_$(arg model).yaml" command="load"/>
 	<group ns="$(arg id_robot)">
 
 		<arg name="prefix" value="$(arg id_robot)_"/>
