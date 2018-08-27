@@ -14,8 +14,7 @@
 	<!-- rbsherpa_hl_omni_std.urdf.xacro or rbsherpa_hl_ackermann_std.urdf.xacro -->
 	<arg name="xacro_robot_a" default="rbsherpa_hl_$(arg model)_std.urdf.xacro"/>
 	<arg name="hq_model_a" default="true"/>
-	<arg name="ros_planar_move_plugin" default="true"/>
-	<!-- if sim is true then ros_planar_move_plugin must be true -->
+	<arg name="ros_planar_move_plugin" default="false"/>
 	<arg name="sim_a" default="true"/>
 
 
